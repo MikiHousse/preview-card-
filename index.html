@@ -7,6 +7,12 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Product preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,23 +21,34 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-  <section class="bg-cream">
-    <div class="container pt-80 pl-60 grid grid-cols-[300px_300px] sm:grid-cols-[1fr]">
-      <div class="">
-        <img class="rounded-l-xl" src="./images/image-product-desktop.jpg" width="300" height="450" alt="">
+<body class="bg-cream">
+  <main>
+    <section class="container px-[420px] py-[320px] sm:px-5 sm:py-5">
+      <div class="grid grid-cols-[300px_300px] sm:grid-cols-[1fr] sm:pt-5">
+        <div class="sm:hidden">
+          <img class="rounded-l-xl " src="./images/image-product-desktop.jpg" width="300" height="450" alt="">
+        </div>
+        <div class="hidden sm:block">
+          <img class="rounded-t-xl" src="./images/image-product-mobile.jpg" alt="">
+        </div>
+        <div class="py-5 px-8 bg-white rounded-r-xl sm:rounded-none sm:rounded-b-xl">
+          <p class="text-xl pb-2 text-grayishBlue">Perfume</p>
+          <h2 class="text-4xl pb-5 font-franc sm:text-3xl">Gabrielle Essence Eau De Parfum</h2>
+          <p class="text-sm pb-5 text-grayishBlue">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+            Perfumer-Creator for the House of CHANEL.</p>
+            <div class="flex items-center pb-6">
+              <span class="text-4xl mr-5 font-franc text-darkCyan">$149.99</span>
+              <s class="pb-1 text-grayishBlue">$169.99</s> <br>
+            </div>
+            <!-- <button class="bg-[url('/images/icon-cart.svg')] bg-no-repeat bg-[50px] bg-darkCyan text-xl rounded-xl text-white px-[76px] py-6 mt-4 hover:bg-green-900">Add to Cart</button> -->
+            <div class="flex bg-darkCyan text-white justify-center hover:bg-green-900 cursor-pointer rounded-xl py-4">
+              <img class="w-fit h-fit pt-[6px] mr-1" src="./images/icon-cart.svg" alt="">
+              <p class="text-xl">Add to Cart</p>
+            </div>
+        </div>
       </div>
-      <div class="p-10 bg-white rounded-r-xl">
-        <p class="text-2xl pb-5">Perfume</p>
-        <h2 class="text-4xl pb-5">Gabrielle Essence Eau De Parfum</h2>
-        <p class="text-ms pb-5">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-          Perfumer-Creator for the House of CHANEL.</p>
-          <span class="text-4xl mr-5">$149.99</span>
-          <span class="pb-1">$169.99</span> <br>
-          <button class="bg-darkCyan text-white pr-16 pl-16 ">Add to Cart</button>
-      </div>
-    </div>
-  </section>  
+    </section>  
+  </main>
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.

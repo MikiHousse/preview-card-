@@ -8,6 +8,9 @@ module.exports = {
       padding: '20px',
       center: true,
     },
+    fontFamily: {
+      franc: ['Fraunces']
+    },
     extend: {
       colors: {
         darkBlue: 'hsl(212, 21%, 14%)',
@@ -15,7 +18,7 @@ module.exports = {
         white: 'hsl(0, 0%, 100%)',
         darkCyan: 'hsl(158, 36%, 37%)',
         cream: 'hsl(30, 38%, 92%)'
-      }
+      },
     }
   },
   plugins: [],
